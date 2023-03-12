@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_weight="3"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dp"
+        android:gravity="center"
+        android:background="#A3E4F5"
+        android:layout_marginBottom="20dp"
+        android:weightSum="1" >
+
+
+        <EditText
+            android:id="@+id/amountID"
+            android:textSize="25sp"
+            android:inputType="numberDecimal"
+            android:hint="Enter Amount"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_weight=".75" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:textAlignment="center"
+            android:id="@+id/fromID"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:clickable="false"
+            android:src="@drawable/ic_arrow_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:clickable="false"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_ccu_24"
+            android:layout_gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="90dp"/>
+        <ImageView
+
+            android:clickable="false"
+            android:src="@drawable/ic_arrow_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:textAlignment="center"
+            android:id="@+id/toID"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/clickActionID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Calculate "
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:textStyle="normal"
+            android:id="@+id/FromID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textAlignment="center"
+            />
+
+
+
+        <TextView
+
+            android:textStyle="normal"
+            android:id="@+id/resultID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:textAlignment="center"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
